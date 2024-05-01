@@ -19,6 +19,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "WaveLength"
+rootProject.name = "Wavelength"
 include(":app")
+
  

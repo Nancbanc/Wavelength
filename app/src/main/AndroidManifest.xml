@@ -23,6 +23,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:label="profile_activity"
+            android:theme="@style/Theme.WaveLength"/>
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="register_activity"
+            android:theme="@style/Theme.WaveLength"/>
+        <activity
+            android:name=".Account"
+            android:exported="false"
+            android:label="account_activity"
+            android:theme="@style/Theme.WaveLength"/>
     </application>
 
 </manifest>
