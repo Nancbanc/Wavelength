@@ -18,7 +18,7 @@ public class MainActivity extends ComponentActivity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        setContent
+        setContentView(R.layour.homepage);
         setupButtons();
     }
     private void setupButtons(){
