@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#14213D"
+    android:contentDescription="home button for the search page">
+
+    <ImageButton
+        android:id="@+id/ssearchbutton"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00000000"
+        android:contentDescription="search button for the search page"
+        android:src="@drawable/vector__3_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sequalizerbutton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00000000"
+        android:contentDescription="equalizer button for the search page"
+        android:src="@drawable/music_equalizer__music_audio_note_wave_sound_equalizer_entertainment__1_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/shomebutton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00000000"
+        android:contentDescription="search button for the home page"
+        android:src="@drawable/vector__2_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/slibrarybutton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00000000"
+        android:contentDescription="library button for the search page"
+        android:src="@drawable/group__1_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/sprofilepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        android:background="#00000000"
+        android:contentDescription="this is the search oage profile background"
+        android:src="@drawable/ellipse_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sprofiletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="44dp"
+        android:text="@string/profilePic"
+        android:textColor="#FCA311"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
