@@ -15,4 +15,6 @@
     <string name="account">Account</string>
     <string name="register_instructions">Please fill in all data below</string>
     <string name="register">CREATE ACCOUNT</string>
+    <string name="songName">Song Name</string>
+    <string name="artistName">Artist Name</string>
 </resources>
