@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "edu.utsa.wavelength.app-mergeDebugResources-46:/values-watch-v20/values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "/Users/kiahnaisadore/.gradle/caches/transforms-3/1c47d9c0d80b6d63e27ac76201ce4a20/transformed/appcompat-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}
