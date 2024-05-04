@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/layout_login.xml.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/layout/login.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "edu.utsa.wavelength.app-debug-48:/layout_registration.xml.flat",
+        "source": "edu.utsa.wavelength.app-main-50:/layout/registration.xml"
+    },
+    {
+        "merged": "edu.utsa.wavelength.app-debug-48:/layout_profile.xml.flat",
+        "source": "edu.utsa.wavelength.app-main-50:/layout/profile.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/xml_backup_rules.xml.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "edu.utsa.wavelength.app-debug-48:/layout_login.xml.flat",
+        "source": "edu.utsa.wavelength.app-main-50:/layout/login.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/layout_profile.xml.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/layout/profile.xml"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-debug-48:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/kiahnaisadore/.gradle/daemon/8.4/edu.utsa.wavelength.app-main-50:/mipmap-xxhdpi/ic_launcher_round.webp"
+    }
+]
