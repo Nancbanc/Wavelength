@@ -6,6 +6,7 @@ import android.widget.EditText;
 import androidx.activity.ComponentActivity;
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.io.File;
@@ -18,12 +19,13 @@ public class MainActivity extends ComponentActivity{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        setContentView(R.layour.homepage);
+        setContentView(R.layout.homepage);
         setupButtons();
     }
     private void setupButtons(){
         Button button1 = (Button) findViewById(R.id.login);
         Button button2 = (Button) findViewById(R.id.register);
+        ImageButton imageButton = (ImageButton) findViewById(R.id.search);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +50,8 @@ public class MainActivity extends ComponentActivity{
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
+                Intent intent2 = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent2);
             }
         });
     }
