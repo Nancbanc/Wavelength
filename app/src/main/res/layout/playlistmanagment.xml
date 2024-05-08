@@ -9,32 +9,54 @@
 
 
     <ImageView
-        android:id="@+id/recplayImage2"
+        android:id="@+id/playlistfolder"
         android:layout_width="187dp"
         android:layout_height="166dp"
-        android:layout_marginTop="212dp"
-        android:layout_marginEnd="240dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="208dp"
+        android:contentDescription="Playlist Folder"
         android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintBottom_toTopOf="@+id/hipImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/playlistfolder"
+        android:layout_width="187dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="208dp"
+        android:contentDescription="Playlist Folder"
+        android:src="@android:drawable/checkbox_off_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/playlistfolder"
+        android:layout_width="187dp"
+        android:layout_height="166dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="208dp"
+        android:contentDescription="Playlist Folder"
+        android:src="@android:drawable/checkbox_off_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/addButton"
         android:layout_width="43dp"
         android:layout_height="38dp"
         android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="add playlist"
         android:src="@android:drawable/ic_input_add"
         tools:layout_editor_absoluteX="91dp"
         tools:layout_editor_absoluteY="679dp" />
 
     <ImageView
         android:id="@+id/profilePicture"
-        android:layout_width="45dp"
-        android:layout_height="38dp"
+        android:layout_width="54dp"
+        android:layout_height="45dp"
         android:src="@drawable/profile"
-        tools:layout_editor_absoluteX="350dp"
+        tools:layout_editor_absoluteX="341dp"
         tools:layout_editor_absoluteY="16dp" />
 
     <ImageButton
@@ -42,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Home"
         android:src="@drawable/vector__2_"
         tools:layout_editor_absoluteX="187dp"
         tools:layout_editor_absoluteY="681dp" />
@@ -50,10 +73,37 @@
         android:id="@+id/imageButton"
         android:layout_width="43dp"
         android:layout_height="37dp"
+        android:background="#00000000"
+        android:contentDescription="player"
         android:src="@drawable/music_equalizer__music_audio_note_wave_sound_equalizer_entertainment__1_"
-        android:tint="#000000"
+        android:tint="#FDFBFB"
         tools:layout_editor_absoluteX="284dp"
         tools:layout_editor_absoluteY="676dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_8"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:contentDescription="search buttom"
+        android:src="@drawable/vector__3_"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="23dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serch Bar"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="33dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
