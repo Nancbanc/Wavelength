@@ -1,67 +1,49 @@
-package edu.utsa.wavelength.ui.theme;
+package edu.utsa.wavelength;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class PlaylistManagement extends AppCompatActivity {
+public class PlaylistManagementActivity extends AppCompatActivity {
 
-    private GridView gridView;
-    private ArrayAdapter<String> adapter;
-    private ArrayList<String> playlists;
+    private ImageButton addButton, homeButton, playerButton, searchButton;
+    private ImageView profilePicture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.playlist_management); // Rename your layout appropriately
 
-        playlists = new ArrayList<>();
-        playlists.add("Playlist 1");
-        playlists.add("Playlist 2");
-        playlists.add("Playlist 3");
+        initializeViews();
+        setupListeners();
+    }
 
-        gridView = findViewById(R.id.playlistGrid);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, playlists);
-        gridView.setAdapter(adapter);
+    private void initializeViews() {
+        addButton = findViewById(R.id.addButton);
+        homeButton = findViewById(R.id.homeButton);
+        playerButton = findViewById(R.id.imageButton);
+        searchButton = findViewById(R.id.imageButton5);
+        profilePicture = findViewById(R.id.profilePicture);
+    }
 
-        SearchView searchView = findViewById(R.id.searchBar);
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                return true;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                adapter.getFilter().filter(newText);
-                return true;
-            }
-        });
-
-        ImageButton addButton = findViewById(R.id.addButton);
+    private void setupListeners() {
         addButton.setOnClickListener(v -> {
-            // Add new playlist logic
+            // Implement your logic for adding a new playlist
         });
 
-        ImageView profilePicture = findViewById(R.id.profilePicture);
-        profilePicture.setOnClickListener(v -> {
-            // Profile viewing/editing logic
-        });
-
-        ImageButton homeButton = findViewById(R.id.homeButton);
         homeButton.setOnClickListener(v -> {
-            // Home button logic
+            // Navigate back to HomeActivity or whichever is your main activity
+            finish();
         });
 
-        ImageButton otherButton = findViewById(R.id.otherButton);
-        otherButton.setOnClickListener(v -> {
-            // Other functionality
+        playerButton.setOnClickListener(v -> {
+            // Launch the music player
+        });
+
+        searchButton.setOnClickListener(v -> {
+            // Perform search operations here
         });
     }
 }
-

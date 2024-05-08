@@ -71,14 +71,14 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="43dp"
-        android:layout_height="37dp"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
         android:background="#00000000"
         android:contentDescription="player"
         android:src="@drawable/music_equalizer__music_audio_note_wave_sound_equalizer_entertainment__1_"
         android:tint="#FDFBFB"
-        tools:layout_editor_absoluteX="284dp"
-        tools:layout_editor_absoluteY="676dp" />
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="681dp" />
 
     <ImageButton
         android:id="@+id/imageButton4"
