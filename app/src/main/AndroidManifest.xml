@@ -49,6 +49,11 @@
             android:exported="false"
             android:label="playlist_management"
             android:theme="@style/Theme.WaveLength"/>
+        <activity
+            android:name=".MusicActivity"
+            android:exported="false"
+            android:label="music_activity"
+            android:theme="@style/Theme.WaveLength"/>
     </application>
 
 </manifest>

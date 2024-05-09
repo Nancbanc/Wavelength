@@ -8,14 +8,39 @@
     android:background="#14213D"> <!-- Updated background color here -->
 
 
+    <TextView
+        android:id="@+id/recplay2"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginBottom="488dp"
+        android:text="@string/playlist1"
+        android:textColor="#FCA311"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/picBackground2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#00000000"
+        android:contentDescription="prfile pic background"
+        android:src="@drawable/ellipse_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/playlistfolder2"
         android:layout_width="187dp"
         android:layout_height="166dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="Playlist Folder"
         android:src="@android:drawable/checkbox_off_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playlistfolder3" />
 
@@ -23,10 +48,11 @@
         android:id="@+id/playlistfolder"
         android:layout_width="187dp"
         android:layout_height="166dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="Playlist Folder"
         android:src="@android:drawable/checkbox_off_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
@@ -34,18 +60,19 @@
         android:id="@+id/playlistfolder3"
         android:layout_width="187dp"
         android:layout_height="166dp"
+        android:layout_marginTop="4dp"
         android:contentDescription="Playlist Folder"
         android:src="@android:drawable/checkbox_off_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/playlistfolder" />
 
     <ImageButton
         android:id="@+id/addButton"
-        android:layout_width="64dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="52dp"
+        android:layout_width="80dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="48dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#00000000"
         android:contentDescription="add playlist"
@@ -57,18 +84,18 @@
         android:id="@+id/profilePicture"
         android:layout_width="54dp"
         android:layout_height="45dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
         android:src="@drawable/profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/homeButton"
-        android:layout_width="67dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="80dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#00000000"
         android:contentDescription="Home"
         android:src="@drawable/vector__2_"
@@ -77,37 +104,37 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="70dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginBottom="24dp"
-        android:contentDescription="music"
+        android:layout_width="80dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#00000000"
+        android:contentDescription="music"
         android:src="@drawable/music_equalizer__music_audio_note_wave_sound_equalizer_entertainment__1_"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toEndOf="@+id/homeButton" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="212dp"
-        android:layout_height="72dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="189dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#00000000"
         android:contentDescription="search bar"
-        android:src="@drawable/rectangle_8"
+        android:src="@drawable/search2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="59dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="42dp"
+        android:backgroundTint="#00000000"
         android:contentDescription="search button"
-        android:src="@drawable/vector__3_"
+        android:src="@drawable/searchsymbol"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
