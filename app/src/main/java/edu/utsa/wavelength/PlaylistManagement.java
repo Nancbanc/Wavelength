@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.activity.ComponentActivity;
-import androidx.appcompat.app.AppCompatActivity;
+//import androidx.appcompat.app.AppCompatActivity;
 
 //public class PlaylistManagement extends AppCompatActivity {
 public class PlaylistManagement extends ComponentActivity {
