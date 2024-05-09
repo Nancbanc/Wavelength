@@ -9,12 +9,36 @@
 
 
     <TextView
-        android:id="@+id/recplay2"
+        android:id="@+id/recplay4"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginBottom="328dp"
+        android:text="@string/playlist2"
+        android:textColor="#FCA311"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/recplay3"
         android:layout_width="149dp"
         android:layout_height="40dp"
         android:layout_marginStart="192dp"
         android:layout_marginBottom="488dp"
         android:text="@string/playlist1"
+        android:textColor="#FCA311"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/recplay2"
+        android:layout_width="156dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginBottom="152dp"
+        android:text="@string/playlist33"
         android:textColor="#FCA311"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +52,7 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="#00000000"
         android:contentDescription="prfile pic background"
-        android:src="@drawable/ellipse_4"
+        android:src="@drawable/funnnypic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,16 +103,6 @@
         android:src="@drawable/addbutton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/profilePicture"
-        android:layout_width="54dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="32dp"
-        android:src="@drawable/profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/homeButton"
