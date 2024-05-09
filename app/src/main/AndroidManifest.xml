@@ -39,6 +39,16 @@
             android:exported="false"
             android:label="account_activity"
             android:theme="@style/Theme.WaveLength"/>
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="home_activity"
+            android:theme="@style/Theme.WaveLength"/>
+        <activity
+            android:name=".PlaylistManagement"
+            android:exported="false"
+            android:label="playlist_management"
+            android:theme="@style/Theme.WaveLength"/>
     </application>
 
 </manifest>

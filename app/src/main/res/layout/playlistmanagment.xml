@@ -9,101 +9,107 @@
 
 
     <ImageView
-        android:id="@+id/playlistfolder"
+        android:id="@+id/playlistfolder2"
         android:layout_width="187dp"
         android:layout_height="166dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="208dp"
         android:contentDescription="Playlist Folder"
         android:src="@android:drawable/checkbox_off_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playlistfolder3" />
 
     <ImageView
         android:id="@+id/playlistfolder"
         android:layout_width="187dp"
         android:layout_height="166dp"
-        android:layout_marginTop="460dp"
-        android:layout_marginEnd="208dp"
         android:contentDescription="Playlist Folder"
         android:src="@android:drawable/checkbox_off_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
     <ImageView
-        android:id="@+id/playlistfolder"
+        android:id="@+id/playlistfolder3"
         android:layout_width="187dp"
         android:layout_height="166dp"
-        android:layout_marginTop="280dp"
-        android:layout_marginEnd="208dp"
         android:contentDescription="Playlist Folder"
         android:src="@android:drawable/checkbox_off_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playlistfolder" />
 
     <ImageButton
         android:id="@+id/addButton"
-        android:layout_width="43dp"
-        android:layout_height="38dp"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#00000000"
         android:contentDescription="add playlist"
-        android:src="@android:drawable/ic_input_add"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="679dp" />
+        android:src="@drawable/addbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/profilePicture"
         android:layout_width="54dp"
         android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:src="@drawable/profile"
-        tools:layout_editor_absoluteX="341dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/homeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_width="67dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#00000000"
         android:contentDescription="Home"
         android:src="@drawable/vector__2_"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="681dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addButton" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="38dp"
-        android:layout_height="32dp"
-        android:background="#00000000"
-        android:contentDescription="player"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="music"
+        android:backgroundTint="#00000000"
         android:src="@drawable/music_equalizer__music_audio_note_wave_sound_equalizer_entertainment__1_"
-        android:tint="#FDFBFB"
-        tools:layout_editor_absoluteX="289dp"
-        tools:layout_editor_absoluteY="681dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toEndOf="@+id/homeButton" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="212dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="search bar"
         android:src="@drawable/rectangle_8"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
-        android:contentDescription="search buttom"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="search button"
         android:src="@drawable/vector__3_"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="23dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Serch Bar"
-        tools:layout_editor_absoluteX="82dp"
-        tools:layout_editor_absoluteY="33dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
