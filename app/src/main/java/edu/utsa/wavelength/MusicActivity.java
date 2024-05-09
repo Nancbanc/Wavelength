@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.activity.ComponentActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MusicActivity extends ComponentActivity {
 

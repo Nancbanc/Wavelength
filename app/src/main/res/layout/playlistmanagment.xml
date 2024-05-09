@@ -8,11 +8,35 @@
     android:background="#14213D"> <!-- Updated background color here -->
 
 
+    <ImageView
+        android:id="@+id/playlistfolder2"
+        android:layout_width="164dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Playlist Folder"
+        android:src="@drawable/ukiyopic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <ImageView
+        android:id="@+id/playlistfolder4"
+        android:layout_width="164dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="192dp"
+        android:contentDescription="Playlist Folder"
+        android:src="@drawable/ukiyopic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
     <TextView
         android:id="@+id/recplay4"
         android:layout_width="156dp"
         android:layout_height="40dp"
-        android:layout_marginStart="192dp"
+        android:layout_marginStart="200dp"
         android:layout_marginBottom="328dp"
         android:text="@string/playlist2"
         android:textColor="#FCA311"
@@ -24,8 +48,8 @@
         android:id="@+id/recplay3"
         android:layout_width="149dp"
         android:layout_height="40dp"
-        android:layout_marginStart="192dp"
-        android:layout_marginBottom="488dp"
+        android:layout_marginStart="204dp"
+        android:layout_marginBottom="504dp"
         android:text="@string/playlist1"
         android:textColor="#FCA311"
         android:textSize="25sp"
@@ -36,8 +60,8 @@
         android:id="@+id/recplay2"
         android:layout_width="156dp"
         android:layout_height="40dp"
-        android:layout_marginStart="192dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="168dp"
         android:text="@string/playlist33"
         android:textColor="#FCA311"
         android:textSize="25sp"
@@ -57,40 +81,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/playlistfolder2"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="Playlist Folder"
-        android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playlistfolder3" />
-
-    <ImageView
         android:id="@+id/playlistfolder"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="164dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="356dp"
         android:contentDescription="Playlist Folder"
-        android:src="@android:drawable/checkbox_off_background"
+        android:src="@drawable/ukiyopic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
-
-    <ImageView
-        android:id="@+id/playlistfolder3"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginTop="4dp"
-        android:contentDescription="Playlist Folder"
-        android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playlistfolder" />
 
     <ImageButton
         android:id="@+id/addButton"

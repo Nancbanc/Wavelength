@@ -13,8 +13,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends ComponentActivity{
+public class MainActivity extends ComponentActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

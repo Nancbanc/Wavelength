@@ -1,6 +1,8 @@
 package edu.utsa.wavelength;
 
 import androidx.activity.ComponentActivity;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
