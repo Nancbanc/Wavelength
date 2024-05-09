@@ -1,12 +1,16 @@
 package edu.utsa.wavelength;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import androidx.activity.ComponentActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PlaylistManagement extends AppCompatActivity {
+//public class PlaylistManagement extends AppCompatActivity {
+public class PlaylistManagement extends ComponentActivity {
 
     private ImageButton addButton, homeButton, playerButton, searchButton;
     private ImageView profilePicture;
@@ -16,9 +20,26 @@ public class PlaylistManagement extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.playlistmanagment); // Rename your layout appropriately
 
-        initializeViews();
-        setupListeners();
+        //initializeViews();
+        //setupListeners();
+        ImageButton button1 = (ImageButton) findViewById(R.id.homeButton);
+        ImageButton button2 = (ImageButton) findViewById(R.id.imageButton);
+
+        button1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(PlaylistManagement.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(PlaylistManagement.this, MusicActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
+    /*
 
     private void initializeViews() {
         addButton = findViewById(R.id.addButton);
@@ -46,4 +67,6 @@ public class PlaylistManagement extends AppCompatActivity {
             // Perform search operations here
         });
     }
+
+     */
 }
