@@ -3,11 +3,14 @@ package edu.utsa.wavelength;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.ComponentActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,6 +28,15 @@ public class ProfileActivity extends ComponentActivity {
         profileInfo = null;
         //assets = getAssets();
         setupProfile();
+
+        // SET UP BUTTON TO TAKE YOU TO HOME SCREEN FROM PROFILE
+        Button button1 = (Button) findViewById(R.id.button2);
+        button1.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void setupProfile(){

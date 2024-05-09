@@ -31,7 +31,7 @@ public class RegisterActivity extends ComponentActivity{
                 EditText emailInput = (EditText) findViewById(R.id.register_emailInput);
 
                 if (validateAccountInfo()) {
-                    createLogin();
+                    id = createLogin();
                     if(id > 0){
                         createAccount(id);
                     }

@@ -17,4 +17,16 @@
     <string name="register">CREATE ACCOUNT</string>
     <string name="songName">Song Name</string>
     <string name="artistName">Artist Name</string>
+    <string name="home">HOME</string>
+    <string name="Profilepic">Profile\n Pic</string>
+    <string name="recplay">Recently Played</string>
+    <string name="hip">Hip Hop</string>
+    <string name="top">Top 100</string>
+    <string name="daily">Daily N</string>
+    <string name="rb"><![CDATA[R&B]]></string>
+    <string name="year">2010\'s</string>
+    <string name="playlist1">U K i y o ☁️</string>
+    <string name="playlist2">Foreign 🫰🏾✨</string>
+    <string name="playlist3">"I ｎ ｍｙｆｅｅｌｉｎｇｓ 🙄  "</string>
+    <string name="playlist33">Vibes 🤍✨</string>
 </resources>

@@ -64,18 +64,8 @@
         android:layout_marginEnd="32dp"
         android:background="#00000000"
         android:contentDescription="this is the search oage profile background"
-        android:src="@drawable/ellipse_4"
+        android:src="@drawable/funnnypic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/sprofiletext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="44dp"
-        android:text="@string/profilePic"
-        android:textColor="#FCA311"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
