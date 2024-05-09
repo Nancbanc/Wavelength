@@ -10,136 +10,130 @@
     tools:layout_editor_absoluteY="0dp">
 
     <ImageView
-        android:id="@+id/hipImage"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginEnd="288dp"
-        android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
-
-    <ImageView
-        android:id="@+id/rbImage"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginEnd="136dp"
-        android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
-
-    <ImageView
-        android:id="@+id/yearImage"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginStart="244dp"
-        android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/dailyImage6"
+        android:layout_width="130dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/ririplaylist"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814" />
+        app:layout_constraintTop_toBottomOf="@+id/wlLogo" />
 
     <ImageView
-        android:id="@+id/topImage3"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="212dp"
-        android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintBottom_toTopOf="@+id/rbImage"
+        android:id="@+id/dailyImage5"
+        android:layout_width="130dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="-28dp"
+        android:src="@drawable/handp"
+        app:layout_constraintBottom_toTopOf="@+id/hip"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/recplay"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <ImageView
+        android:id="@+id/dailyImage4"
+        android:layout_width="130dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/randb"
+        app:layout_constraintBottom_toTopOf="@+id/rb"
+        app:layout_constraintStart_toEndOf="@+id/dailyImage5" />
 
     <ImageView
         android:id="@+id/dailyImage"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginStart="288dp"
-        android:layout_marginTop="212dp"
-        android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="130dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:src="@drawable/dm"
+        app:layout_constraintStart_toEndOf="@+id/dailyImage3"
+        app:layout_constraintTop_toBottomOf="@+id/picBackground" />
 
     <ImageView
-        android:id="@+id/recplayImage"
-        android:layout_width="187dp"
-        android:layout_height="166dp"
-        android:layout_marginTop="212dp"
-        android:layout_marginEnd="240dp"
-        android:src="@android:drawable/checkbox_off_background"
-        app:layout_constraintBottom_toTopOf="@+id/hipImage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:id="@+id/dailyImage2"
+        android:layout_width="130dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/twentyten"
+        app:layout_constraintBottom_toTopOf="@+id/year"
+        app:layout_constraintStart_toEndOf="@+id/dailyImage4" />
+
+    <ImageView
+        android:id="@+id/dailyImage3"
+        android:layout_width="130dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="244dp"
+        android:src="@drawable/t100"
+        app:layout_constraintStart_toEndOf="@+id/dailyImage6"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/recplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginTop="20dp"
         android:text="@string/recplay"
         android:textColor="#FCA311"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dailyImage6" />
 
     <TextView
         android:id="@+id/top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="20dp"
         android:text="@string/top"
         android:textColor="#FCA311"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/recplay"
+        app:layout_constraintTop_toBottomOf="@+id/dailyImage3" />
 
     <TextView
         android:id="@+id/daily"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="348dp"
-        android:layout_marginBottom="332dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="20dp"
         android:text="@string/daily"
         android:textColor="#FCA311"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/top"
+        app:layout_constraintTop_toBottomOf="@+id/dailyImage" />
 
     <TextView
         android:id="@+id/hip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="344dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/hip"
         android:textColor="#FCA311"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/search"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/rb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/rb"
         android:textColor="#FCA311"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/equalizerButton"
+        app:layout_constraintStart_toEndOf="@+id/hip" />
 
     <TextView
         android:id="@+id/year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginBottom="44dp"
         android:text="@string/year"
         android:textColor="#FCA311"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/libraryButton"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageButton

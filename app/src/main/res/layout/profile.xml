@@ -77,7 +77,7 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="120dp"
+            android:layout_marginBottom="124dp"
             android:backgroundTint="#FDA311"
             android:text="@string/home"
             app:layout_constraintBottom_toBottomOf="parent"
