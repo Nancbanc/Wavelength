@@ -72,14 +72,14 @@ public class MusicActivity extends ComponentActivity {
     }
 
     private void playNextSong() {
-        musicPlayer.stop();
+       // musicPlayer.stop();
         musicPlayer = MediaPlayer.create(this, R.raw.whatever);
         musicPlayer.start();
         isPlaying = true;
     }
 
     private void playPreviousSong() {
-        musicPlayer.stop();
+       // musicPlayer.stop();
         musicPlayer = MediaPlayer.create(this, R.raw.snooze);
         musicPlayer.start();
         isPlaying = true;
