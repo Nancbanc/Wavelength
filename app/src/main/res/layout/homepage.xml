@@ -91,23 +91,23 @@
         android:id="@+id/top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="376dp"
-        android:layout_marginEnd="156dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="332dp"
         android:text="@string/top"
         android:textColor="#FCA311"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/daily"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="372dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginBottom="332dp"
         android:text="@string/daily"
         android:textColor="#FCA311"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/hip"
@@ -149,7 +149,7 @@
         android:layout_marginEnd="52dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="#00000000"
-        android:contentDescription="music library"
+        android:contentDescription="playlist library"
         android:src="@drawable/group__1_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
