@@ -13,7 +13,7 @@
         android:layout_width="320dp"
         android:layout_height="320dp"
         android:layout_marginTop="144dp"
-        android:src="@drawable/ellipse_4"
+        android:src="@drawable/md"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,19 +139,8 @@
         android:layout_height="68dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/ellipse_4"
+        android:src="@drawable/funnnypic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/profiletext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/Profilepic"
-        android:textColor="#FCA311"
-        app:layout_constraintEnd_toEndOf="@+id/profileback"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
