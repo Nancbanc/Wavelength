@@ -78,15 +78,15 @@ public class MusicActivity extends ComponentActivity {
     }
 
     private void playNextSong() {
-<<<<<<< Updated upstream
+
        // musicPlayer.stop();
         musicPlayer = MediaPlayer.create(this, R.raw.whatever);
-=======
+
         currentSongIndex = (currentSongIndex + 1) % songCovers.length;
         musicPlayer.stop();
         musicPlayer = MediaPlayer.create(this, getSongResource(currentSongIndex));
         //musicPlayer = MediaPlayer.create(this, R.raw.whatever);
->>>>>>> Stashed changes
+
         musicPlayer.start();
 
         updateSongCover();
@@ -103,14 +103,13 @@ public class MusicActivity extends ComponentActivity {
     }
 
     private void playPreviousSong() {
-<<<<<<< Updated upstream
+
        // musicPlayer.stop();
         musicPlayer = MediaPlayer.create(this, R.raw.snooze);
-=======
+
         currentSongIndex = (currentSongIndex - 1 + songCovers.length) % songCovers.length;
         musicPlayer.stop();
         musicPlayer = MediaPlayer.create(this, getSongResource(currentSongIndex));
->>>>>>> Stashed changes
         musicPlayer.start();
         updateSongCover();
         isPlaying = true;
