@@ -18,7 +18,7 @@ public class MusicActivity extends ComponentActivity {
     boolean isPlaying = false;
     MediaPlayer musicPlayer;
     private int currentSongIndex = 0;
-    int[] songCovers = {R.drawable.md, R.drawable.snooze, R.drawable.whatevershewants};
+    int[] songCovers = {R.drawable.md, R.drawable.whatevershewants, R.drawable.snooze};
     int[] songResources = {R.raw.million, R.raw.whatever, R.raw.snooze};
 
     @Override
