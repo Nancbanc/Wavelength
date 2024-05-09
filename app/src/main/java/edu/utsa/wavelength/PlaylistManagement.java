@@ -6,7 +6,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PlaylistManagementActivity extends AppCompatActivity {
+public class PlaylistManagement extends AppCompatActivity {
 
     private ImageButton addButton, homeButton, playerButton, searchButton;
     private ImageView profilePicture;
@@ -14,7 +14,7 @@ public class PlaylistManagementActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.playlist_management); // Rename your layout appropriately
+        setContentView(R.layout.playlistmanagment); // Rename your layout appropriately
 
         initializeViews();
         setupListeners();
