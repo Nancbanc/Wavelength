@@ -25,7 +25,7 @@ public class MusicActivity extends ComponentActivity {
         skipButton = findViewById(R.id.skip);
         backButton = findViewById(R.id.goback);
 
-        musicPlayer = MediaPlayer.create(this, R.raw.shake);
+        musicPlayer = MediaPlayer.create(this, R.raw.million);
 
         img.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -73,14 +73,14 @@ public class MusicActivity extends ComponentActivity {
 
     private void playNextSong() {
         musicPlayer.stop();
-        musicPlayer = MediaPlayer.create(this, R.raw.moon);
+        musicPlayer = MediaPlayer.create(this, R.raw.whatever);
         musicPlayer.start();
         isPlaying = true;
     }
 
     private void playPreviousSong() {
         musicPlayer.stop();
-        musicPlayer = MediaPlayer.create(this, R.raw.empty);
+        musicPlayer = MediaPlayer.create(this, R.raw.snooze);
         musicPlayer.start();
         isPlaying = true;
     }
