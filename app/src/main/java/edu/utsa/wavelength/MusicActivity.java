@@ -3,6 +3,7 @@ package edu.utsa.wavelength;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.content.Intent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -13,19 +14,19 @@ public class MusicActivity extends ComponentActivity {
 
     ImageView img;
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.musicplayer);
 
         img = findViewById(R.id.playpause);
 
-        img.setOnClickListener(new View.OnClickListener() {
+        img.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
+            public boolean onTouch(View v, MotionEvent event) {
                 MediaPlayer mp = MediaPlayer.create(MusicActivity.this, R.raw.shake);
                 mp.start();
 
-                //return false;
+                return false;
             }
         });
     }
