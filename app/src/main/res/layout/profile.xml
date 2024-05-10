@@ -27,12 +27,12 @@
             android:id="@+id/name"
             android:layout_width="88dp"
             android:layout_height="27dp"
-            android:layout_marginTop="372dp"
+            android:layout_marginTop="380dp"
             android:text="@string/name"
             android:textColor="#E5E5E5"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/fullName"
-            app:layout_constraintHorizontal_bias="0.852"
+            app:layout_constraintHorizontal_bias="0.842"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,7 +53,7 @@
             android:id="@+id/fullName"
             android:layout_width="168dp"
             android:layout_height="30dp"
-            android:layout_marginTop="372dp"
+            android:layout_marginTop="380dp"
             android:layout_marginEnd="60dp"
             android:text="@string/fullName"
             android:textColor="#E5E5E5"
@@ -63,10 +63,10 @@
 
         <TextView
             android:id="@+id/jdoeemail"
-            android:layout_width="166dp"
+            android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_marginTop="56dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="28dp"
             android:text="@string/jdoeemail"
             android:textColor="#E5E5E5"
             android:textSize="20sp"

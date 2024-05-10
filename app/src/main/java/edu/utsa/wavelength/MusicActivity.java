@@ -7,19 +7,27 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.SeekBar;
 
 import androidx.activity.ComponentActivity;
+
+import java.util.Random;
 
 public class MusicActivity extends ComponentActivity {
 
     ImageView img;
     ImageView skipButton;
     ImageView backButton;
+    ImageView songimage;
     boolean isPlaying = false;
     MediaPlayer musicPlayer;
-    private int currentSongIndex = 0;
-    int[] songCovers = {R.drawable.md, R.drawable.whatevershewants, R.drawable.snooze};
-    int[] songResources = {R.raw.million, R.raw.whatever, R.raw.snooze};
+    SeekBar seekBar;
+
+    Random random = new Random();
+    int currentSongIndex = 0;
+    int[] songCovers = {R.drawable.nlm, R.drawable.loveme, R.drawable.fyb, R.drawable.idgaf, R.drawable.md, R.drawable.snooze, R.drawable.gis, R.drawable.wannabe, R.drawable.whatevershewants};
+    int[] songResources = {R.raw.neverlooseme, R.raw.loveme, R.raw.fyb, R.raw.idgaf, R.raw.million, R.raw.snooze, R.raw.gis, R.raw.wannabe, R.raw.whateversewants};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,39 +38,67 @@ public class MusicActivity extends ComponentActivity {
         img = findViewById(R.id.playpause);
         skipButton = findViewById(R.id.skip);
         backButton = findViewById(R.id.goback);
+        songimage = findViewById(R.id.songplayer);
+        seekBar = findViewById(R.id.seekBar);
 
-        musicPlayer = MediaPlayer.create(this, R.raw.million);
+        musicPlayer = MediaPlayer.create(this, getSongResource(currentSongIndex));
+        updateSongCover();
 
-        img.setOnTouchListener(new View.OnTouchListener() {
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    togglePlayPause();
-                    return true; // Consume the touch event
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if (fromUser) {
+                    musicPlayer.seekTo(progress);
                 }
-                return false;
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
             }
         });
 
-        skipButton.setOnTouchListener(new View.OnTouchListener() {
+        musicPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    playNextSong();
-                    return true; // Consume the touch event
-                }
-                return false;
+            public void onPrepared(MediaPlayer mp) {
+                seekBar.setMax(mp.getDuration());
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        while (musicPlayer != null) {
+                            try {
+                                int currentPosition = musicPlayer.getCurrentPosition();
+                                seekBar.setProgress(currentPosition);
+                                Thread.sleep(1000);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }).start();
             }
         });
 
-        backButton.setOnTouchListener(new View.OnTouchListener() {
+        img.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    playPreviousSong();
-                    return true; // Consume the touch event
-                }
-                return false;
+            public void onClick(View v) {
+                togglePlayPause();
+            }
+        });
+
+        skipButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playNextSong();
+            }
+        });
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playPreviousSong();
             }
         });
     }
@@ -78,37 +114,46 @@ public class MusicActivity extends ComponentActivity {
     }
 
     private void playNextSong() {
-
-       // musicPlayer.stop();
-        musicPlayer = MediaPlayer.create(this, R.raw.whatever);
-
+        skipButton.setEnabled(false);
         currentSongIndex = (currentSongIndex + 1) % songCovers.length;
-        musicPlayer.stop();
+        if (musicPlayer.isPlaying()) {
+            musicPlayer.stop();
+        }
+        if(musicPlayer != null){
+            musicPlayer.release();
+        }
         musicPlayer = MediaPlayer.create(this, getSongResource(currentSongIndex));
-        //musicPlayer = MediaPlayer.create(this, R.raw.whatever);
-
-        musicPlayer.start();
-
+        // another setOnPreparedListner so when the skip button is pressed, it doesn't quit
+        musicPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.start();
+                skipButton.setEnabled(true);
+            }
+        });
         updateSongCover();
-
         isPlaying = true;
     }
 
     private void updateSongCover(){
         int currentIndex = getCurrentSongIndex();
-        img.setImageResource(songCovers[currentIndex]);
+        songimage.setImageResource(songCovers[currentIndex]);
     }
     private int getCurrentSongIndex(){
         return currentSongIndex;
     }
 
+
+
     private void playPreviousSong() {
-
-       // musicPlayer.stop();
-        musicPlayer = MediaPlayer.create(this, R.raw.snooze);
-
         currentSongIndex = (currentSongIndex - 1 + songCovers.length) % songCovers.length;
-        musicPlayer.stop();
+        if (musicPlayer.isPlaying()) {
+            musicPlayer.stop();
+        }
+        if(musicPlayer != null){
+            musicPlayer.release();
+        }
+        //musicPlayer.release();
         musicPlayer = MediaPlayer.create(this, getSongResource(currentSongIndex));
         musicPlayer.start();
         updateSongCover();
